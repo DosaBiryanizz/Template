@@ -83,13 +83,36 @@
       height: 100%;
     }
 
+    #slideshow-mobile {
+      display: none;
+    }
+    
+
     @media (min-width: 320px) and (max-width: 767px) {
       #slideshow {
-        position: relative;
-        height: 30vh;
-        width: 100%;
-        padding-top: 20px;
+        display: none;
       }
+
+      #slideshow-mobile {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: block;
+    }
+
+    .himg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    #slideshow-mobile>div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
     }
   </style>
 </head>
@@ -285,12 +308,26 @@
         <div>
           <img class="himg" src="./assets/slides/4a.png" />
         </div>
-        <!-- <div>
-          <img class="himg" src="./assets/slides/6a.png" />
-        </div> -->
-        <!-- <div>
-          <img class="himg" src="./assets/slides/7b.png" />
-        </div> -->
+      </div>
+      <div id="slideshow-mobile">
+        <div>
+          <img class="himg" src="./assets/slides/i1.jpeg" />
+        </div>
+        <div>
+          <img class="himg" src="./assets/slides/i2.jpeg" />
+        </div>
+        <div>
+          <img class="himg" src="./assets/slides/i3.jpeg" />
+        </div>
+        <div>
+          <img class="himg" src="./assets/slides/i4.jpeg" />
+        </div>
+        <div>
+          <img class="himg" src="./assets/slides/i5.jpeg" />
+        </div>
+        <div>
+          <img class="himg" src="./assets/slides/i6.jpeg" />
+        </div>
       </div>
       <!-- <div id="slideshow">
           <div class="hero-content">
@@ -1306,11 +1343,22 @@
 
     setInterval(function () {
       $("#slideshow > div:first")
-        .fadeOut(2000)
+        .fadeOut(2500)
         .next()
         .fadeIn(00)
         .end()
         .appendTo("#slideshow");
+    }, 3000);
+
+    $("#slideshow-mobile > div:gt(0)").hide();
+
+    setInterval(function () {
+      $("#slideshow-mobile > div:first")
+        .fadeOut(2500)
+        .next()
+        .fadeIn(00)
+        .end()
+        .appendTo("#slideshow-mobile");
     }, 3000);
   </script>
 </body>
