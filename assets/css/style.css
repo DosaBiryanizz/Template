@@ -1798,7 +1798,7 @@ ul.dft-menulist li:last-child .dft-single-list {
 /*----------------------------------------*/
 .most-popular-food-area {
   position: relative;
-  padding-top: 80px;
+  padding-top: 0px;
   padding-bottom: 80px;
 }
 .most-popular-food-area .section-titleV1 {
