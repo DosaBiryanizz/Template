@@ -644,8 +644,8 @@ header.navbar-fixed-top {
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
-  -webkit-tap-highlight-color: #e27802;
-  background-color: #e27802;
+  -webkit-tap-highlight-color: #000;
+  background-color: #000;
   border-radius: 5px;
   margin: 10px auto;
 }
@@ -4667,17 +4667,19 @@ html[dir="rtl"] .faq-question-submit {
   #dfoodyMenu {
     width: 100%;
     position: fixed;
-    top: 90px;
+    top: 80px;
     z-index: 999;
-    background-color: #e27802;
+    background-color: #000;
     -webkit-box-shadow: 0px 13px 35px -12px rgba(35, 35, 35, 0.15);
     -moz-box-shadow: 0px 13px 35px -12px rgba(35, 35, 35, 0.15);
     box-shadow: 0px 13px 35px -12px rgba(35, 35, 35, 0.15);
     padding: 5px;
+    min-height: 100vh;
+    opacity: 0.9;
   }
 
   ul.dfoody-menu li ul {
-    background-color: #e27802;
+    background-color: #000;
   }
 
   .dfdV2 .dfoody-header-box {
