@@ -477,6 +477,7 @@ a.btn-style-b:hover {
 }
 #dfoodyMenu ul {
   width: 12em;
+  background-color: #00b0ff;
 }
 
 /*** MENU ***/
@@ -4677,13 +4678,13 @@ html[dir="rtl"] .faq-question-submit {
     min-height: 100vh;
     opacity: 0.95;
   }
-
   ul.dfoody-menu li ul {
     background-color: #000;
   }
 
   .dfdV2 .dfoody-header-box {
     padding: 10px 0px;
+    text-align: center;
   }
 
   .f-widget {
