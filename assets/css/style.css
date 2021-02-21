@@ -1798,9 +1798,8 @@ ul.dft-menulist li:last-child .dft-single-list {
 /*  Food Style 1
 /*----------------------------------------*/
 .most-popular-food-area {
-  position: relative;
-  padding-top: 0px;
   padding-bottom: 80px;
+  padding-top: 200px;
 }
 .most-popular-food-area .section-titleV1 {
   margin-bottom: 60px;
