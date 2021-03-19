@@ -406,16 +406,16 @@
     function initMap() {
       map = new google.maps.Map(document.getElementById("googleMap"), {
         center: {
-          lat: 37.756566,
-          lng: -121.464235,
+          lat: -37.81534,
+          lng: 144.96323,
         },
         zoom: 15,
         scrollwheel: false,
       });
       var marker = new google.maps.Marker({
         position: {
-          lat: 37.756566,
-          lng: -121.464235,
+          lat: -37.81534,
+          lng: 144.96323,
         },
         map: map,
         title: "Voidcoders",
@@ -423,7 +423,8 @@
     }
   </script>
 
-  <script src="https://g.page/dosa-biryanizz-chaat-cafe?share" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI7EiIpx_LqzhrPfrHrJ8GsWhO3CgTFmM&amp;callback=initMap"
+    async defer></script>
 
   <!-- Scripts -->
   <!-- jQuery Plugin -->
