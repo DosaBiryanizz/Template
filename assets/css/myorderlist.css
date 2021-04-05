@@ -1,0 +1,430 @@
+
+
+.header-area{
+	background-color: #ffffff;
+}
+.copyRight {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5%;
+  background-color: #ffffff;
+  margin-left: 5%;
+  margin-top: 15%;
+}
+
+
+.user_name{
+	font-size: 36px;
+	color: #000000;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  background-color: #ffffff;
+  margin-left: 1%;
+  margin-top: 5px;
+}
+.left{
+flex:2.5;
+}
+.right{
+flex:17;
+}
+.middle{
+flex:0;
+}
+
+.work2_flex-item-left {
+flex:40; 
+}
+
+
+.work2_flex-item-middle{
+flex: 1;
+}
+
+
+
+.work2_flex-item-right {
+flex:10;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 600px) {
+  .work2_flex-container {
+    flex-direction: column;
+  }
+}
+
+
+.work2_box1_desc{
+}
+.edit_profile_button{
+background-color: #0096d5;
+padding: 12px 16px;
+text-align: center;
+cursor: pointer;
+color:white;
+border-radius: 2px;
+
+}
+.edit_profile_button:hover{
+	
+}
+
+
+.order_box{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-left: 15%;
+	margin-top: 10%;
+}
+
+.class_past_orders{
+	padding-bottom: 50px;
+}
+
+
+/*load more*/
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 100%;
+  color: #000;
+  clear: both;border: 1px solid gray;
+  display: none;
+  margin-bottom: 30px;
+}
+#loadMore {
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #0096d5;
+  transition: .3s;
+}
+#loadMore:hover {
+  color: blue;
+  background-color: #fff;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+
+/*order flex*/
+
+*{
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;  
+  padding: 20px 30px;
+ }
+
+/* Clear floats after the columns */
+.order_row:after {
+  content: "";
+  display: table;
+
+}
+
+
+.column_middle{
+	margin-left: -120px;
+}
+.column_right{
+	margin-left: -80px;
+	
+}
+.column_middle p{
+font-size: 12px;	
+}
+
+.column_right p{
+font-size: 12px;	
+}
+.view_details_btn{
+font-size: 14px;
+font-weight: bold;
+}
+
+.order_lowerblock{
+	margin-top: 0px;
+}
+
+
+.order_column {
+  
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+.order_left{
+  float: left;
+  width: 50%;
+  padding-top: 30px;
+  margin-left: 30px;
+  border-top: 1px dotted gray;
+}
+
+.order_right {
+float: left;
+padding-top: 30px;
+  margin-right: 30px;
+ border-top: 1px dotted gray;
+  width: 40%;
+  padding-left: 50px;
+}
+
+.reorder_button{
+background-color: #0096d5;
+padding: 12px 16px;
+text-align: center;
+cursor: pointer;
+color:white;
+border-radius: 2px;
+
+}
+
+.help_button{
+background-color: #0096d5;
+padding: 12px 32px;
+text-align: center;
+cursor: pointer;
+color:white;
+border-radius: 2px;
+}
+
+.tot_paid{
+	font size: 14px;
+}
+
+
+
+
+/*mobile responsive*/
+
+
+@media (min-width: 320px) and (max-width: 767px){
+
+.user_name{
+	font-size: 24px;
+	color: #000000;
+	margin-top: 100px;
+	margin-left: 0px;
+}
+.mob_no{
+font-size: 12px;
+}
+.email_id{
+font-size: 12px;
+}
+.edit_profile_button{
+margin-top: 30px;
+margin-left: 50px;
+}
+
+.work2_box1_desc2{
+	padding-bottom: 30px;
+	
+}
+.copyRight {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-bottom: 2px solid gray;
+  margin-bottom: -50px;
+
+ }
+.details {
+  display: flex;
+  flex-direction: row;
+ background-color: #ffffff;
+ padding-bottom: 20px;
+ 
+}
+.class_past_orders{
+	margin-left: -50px;
+	padding-bottom: 30px;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*load more*/
+.flex {
+  display: flex;
+  margin-left: -80px;
+margin-bottom:100px;
+margin-right: 20px;
+
+}
+.content {
+  width: 100%;
+  color: #000;
+  clear: both;
+  border: 0px solid gray;
+  border-bottom: 1px solid gray;
+
+  display: none;
+  margin-bottom: 30px;
+  margin: 0px;
+}
+#loadMore {
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 100px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #0096d5;
+  transition: .3s;
+}
+#loadMore:hover {
+  color: blue;
+  background-color: #fff;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+
+/*order flex*/
+
+*{
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+ }
+
+/* Clear floats after the columns */
+.order_row:after {
+  content: "";
+  display: table;
+
+}
+
+.column_middle{
+	margin-left: 20px;
+}
+.column_right{
+	margin-left: 10px;
+
+}
+
+.column_middle p{
+font-size: 12px;	
+}
+
+.column_right p{
+font-size: 12px;	
+}
+.view_details_btn{
+font-size: 14px;
+font-weight: bold;
+}
+
+.order_lowerblock{
+	margin-top: 0px;
+}
+
+
+.order_column {
+  
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+border-top: 1px solid gray;
+}
+
+.order_left{
+  float: left;
+  width: 50%;
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-top: 20px;
+  border-top: 0px dotted gray;
+}
+
+.order_right {
+float: left;
+padding-top: 0px;
+  margin-right: 0px;
+ margin-top: 20px;
+ border-top: 0px dotted gray;
+  width: 40%;
+  padding-left: 0px;
+}
+
+.reorder_button{
+background-color: #ffffff;
+padding: 12px 16px;
+text-align: center;
+cursor: pointer;
+color:white;
+border-radius: 2px;
+font size: 14px;
+	font-weight: bold
+}
+
+.help_button{
+background-color: #ffffff;
+font size: 14px;
+	font-weight: bold
+padding: 12px 32px;
+text-align: center;
+cursor: pointer;
+color:white;
+border-radius: 2px;
+}
+
+.tot_paid{
+	font size: 14px;
+	font-weight: bold
+}
+
+.view_details_btn{
+font-size: 14px;
+font-weight: bold;
+padding-right: 100px;
+padding-right: 100px;
+}
+
+
+
+}
+
